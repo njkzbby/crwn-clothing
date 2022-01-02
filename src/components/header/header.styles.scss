@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 
   .logo-container {
     height: 100%;
@@ -18,8 +20,25 @@
     align-items: center;
     justify-content: flex-end;
 
+    .SignOut {
+      border: solid 1px #904e4e7a;
+      transition: all 0.2s;
+      &:hover {
+        border: solid 1px #904e4ec7;
+      }
+    }
+
+    .SignIn {
+      border: solid 1px #8c92ac;
+      transition: all 0.2s;
+      &:hover {
+        border: solid 1px #4b5eb6;
+      }
+    }
+
     .option {
       padding: 10px 15px;
+      cursor: pointer;
     }
   }
 }
